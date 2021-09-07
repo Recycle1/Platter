@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyProgress">
+        <item name="android:indeterminateDrawable">@drawable/bg_progress</item>
+        <item name="android:indeterminateDuration">500</item>
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D000000"
+    android:id="@+id/r1">
+    <TextView
+        android:id="@+id/tv_shuru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入共享码"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/et_share"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/bg_share"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:letterSpacing="2.5"
+        android:layout_below="@+id/tv_shuru"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btn_ksjs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_share"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="100dp"
+        android:text="开始接收"
+        android:background="@drawable/bg_ksjs"/>
+</RelativeLayout>

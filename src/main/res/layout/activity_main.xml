@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_s"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="@drawable/round1"
+        android:text="S"
+        android:textSize="100dp"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/btn_r"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="@drawable/round2"
+        android:text="R"
+        android:textSize="100dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <cn.enjoytoday.shadow.ShadowLayout
+        android:id="@+id/shadow3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        app:shadowRadius="10dp"
+        app:shadowColor="#bebebe"
+        app:blurRadius="2dp"
+        app:xOffset="1dp"
+        app:yOffset="-5dp"
+        android:gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/l1">
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#C1C5EA"
+                android:text="共享画面"
+                android:textSize="15sp"
+                android:textColor="#0FA8CE"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="#808080"/>
+            <Button
+                android:id="@+id/btn_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="接收画面"
+                android:textSize="15sp"
+                android:textColor="#0FA8CE"/>
+        </LinearLayout>
+    </cn.enjoytoday.shadow.ShadowLayout>
+
+
+
+</RelativeLayout>
