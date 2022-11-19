@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+}
+
+android {
+
+    compileSdkVersion 30
+
+    defaultConfig {
+
+        minSdkVersion 21
+        targetSdkVersion 30
+
+
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86',  'armeabi-v7a'
+            universalApk false
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            jniLibs.srcDirs = ['libs']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+
+    }
+
+}

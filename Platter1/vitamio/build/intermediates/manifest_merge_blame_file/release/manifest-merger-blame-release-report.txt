@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.vov.vitamio"
+4    android:versionCode="400"
+5    android:versionName="4.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\123\Platter1\vitamio\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\123\Platter1\vitamio\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->D:\123\Platter1\vitamio\AndroidManifest.xml:7:5-68
+11-->D:\123\Platter1\vitamio\AndroidManifest.xml:7:22-65
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\123\Platter1\vitamio\AndroidManifest.xml:8:5-67
+12-->D:\123\Platter1\vitamio\AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\123\Platter1\vitamio\AndroidManifest.xml:9:5-79
+13-->D:\123\Platter1\vitamio\AndroidManifest.xml:9:22-76
+14
+15    <application>
+15-->D:\123\Platter1\vitamio\AndroidManifest.xml:11:5-19:19
+16        <activity android:name="io.vov.vitamio.activity.myActivity" />
+16-->D:\123\Platter1\vitamio\AndroidManifest.xml:12:9-66
+16-->D:\123\Platter1\vitamio\AndroidManifest.xml:12:19-54
+17        <activity
+17-->D:\123\Platter1\vitamio\AndroidManifest.xml:13:9-18:63
+18            android:name="io.vov.vitamio.activity.InitActivity"
+18-->D:\123\Platter1\vitamio\AndroidManifest.xml:14:13-50
+19            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+19-->D:\123\Platter1\vitamio\AndroidManifest.xml:15:13-113
+20            android:launchMode="singleTop"
+20-->D:\123\Platter1\vitamio\AndroidManifest.xml:16:13-43
+21            android:theme="@android:style/Theme.NoTitleBar"
+21-->D:\123\Platter1\vitamio\AndroidManifest.xml:17:13-60
+22            android:windowSoftInputMode="stateAlwaysHidden" />
+22-->D:\123\Platter1\vitamio\AndroidManifest.xml:18:13-60
+23    </application>
+24
+25</manifest>
