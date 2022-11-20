@@ -1,6 +1,6 @@
 # Platter
 ## Brief introduction
-The idea of this project was originally put forward by my tutor Li Binbin, and I was responsible for will the specific code. It can realize that multiple devices can play a video at the same time, and each device presents a part of the picture, finally realizing the effect of splicing small screens into large screens.
+The idea of this project was originally put forward by my tutor Li Binbin, and I was responsible for the specific code. It can realize that multiple devices can play a video at the same time, and each device presents a part of the picture, finally realizing the effect of splicing small screens into large screens.
 ## Technical realization
 - Get the sizes of different mobile phones, take the smallest mobile phone as the video size, and use LAN communication to transmit video files.
 - Using multithreading technology, one device can control the playing progress of other devices.
