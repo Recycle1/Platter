@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_blue">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_scan"
+            android:background="@drawable/round">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/zxing"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:textColor="#353333"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电影"
+            android:textColor="#8A8383"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电视剧"
+            android:textColor="#8A8383"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纪录片"
+            android:textColor="#8A8383"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="综艺"
+            android:textColor="#8A8383"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll2"
+        android:background="#FBFAFA"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBFAFA"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginVertical="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_main1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp"
+                android:textColor="#302E2E"
+                android:paddingLeft="12dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="今日热播"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/tv_main2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#302E2E"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:textStyle="bold"
+                android:paddingLeft="12dp"
+                android:textSize="15sp"
+                android:text="精选"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv2"
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

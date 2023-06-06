@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="开始拔河"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#302F2F"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:text="倒计时：10秒"
+        android:textColor="#423838"
+        android:textSize="22sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:max="200"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="25dp">
+
+        <TextView
+            android:id="@+id/tv_score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="125"
+            android:textColor="#8E9AE8"/>
+
+        <TextView
+            android:id="@+id/tv_score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75"
+            android:textColor="#EC5C5C"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_tug"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="255dp"
+        android:background="@drawable/round3"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="55sp" />
+
+</LinearLayout>

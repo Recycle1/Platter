@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp">
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:src="@drawable/p"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="italic"
+            android:gravity="left"
+            android:text="Platter"
+            android:textSize="27sp"
+            android:textColor="#177DAE"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="195dp"
+        android:layout_marginHorizontal="45dp"
+        android:hint="手机号"
+        android:paddingHorizontal="15dp"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:maxLength="12"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="45dp"
+        android:hint="密码"
+        android:maxLength="15"
+        android:paddingHorizontal="15dp"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_login" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginTop="11dp">
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_find_password"-->
+        <!--            android:layout_width="65dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginHorizontal="5dp"-->
+        <!--            android:background="#00000000"-->
+        <!--            android:text="找回密码"-->
+        <!--            android:gravity="right"-->
+        <!--            android:paddingRight="5dp"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="15sp" />-->
+        <!--        <View-->
+        <!--            android:layout_width="2dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:background="#7E6969"-->
+        <!--            android:layout_marginVertical="2.5dp"/>-->
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="#00000000"
+            android:gravity="right"
+            android:paddingLeft="5dp"
+            android:text="新用户注册"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

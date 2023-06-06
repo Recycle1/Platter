@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_gradient">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white">
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/exit_activity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="拼屏派对"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#302F2F"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"/>
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:background="@drawable/zxing"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp">
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置人数"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+            <EditText
+                android:id="@+id/et_person_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:background="@drawable/edittext1"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_imgQrcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        android:layout_above="@id/rl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll1"
+        android:background="@drawable/round_tiny2">
+
+        <Button
+            android:id="@+id/btn_begin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发起"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="55dp"
+            android:layout_marginHorizontal="55dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_login"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

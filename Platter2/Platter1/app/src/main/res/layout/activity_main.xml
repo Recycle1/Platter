@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/color_blue">
+
+<!--    <Switch-->
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textOff="WIFI"-->
+<!--        android:textOn="通用"-->
+<!--        android:showText="true"/>-->
+
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fun"/>
+
+<!--    <cn.enjoytoday.shadow.ShadowLayout-->
+<!--        android:id="@+id/shadow3"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:shadowRadius="10dp"-->
+<!--        app:shadowColor="#bebebe"-->
+<!--        app:blurRadius="2dp"-->
+<!--        app:xOffset="1dp"-->
+<!--        app:yOffset="-5dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginLeft="2dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:id="@+id/l1">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_send"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="#C1C5EA"-->
+<!--                android:text="共享画面"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="#0FA8CE"/>-->
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#808080"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_receive"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@color/white"-->
+<!--                android:text="接收画面"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="#0FA8CE"/>-->
+<!--        </LinearLayout>-->
+<!--    </cn.enjoytoday.shadow.ShadowLayout>-->
+
+    <LinearLayout
+        android:id="@+id/fun"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="12dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_main"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_active" />
+
+            <TextView
+                android:id="@+id/tv_main"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/img_main"
+                android:layout_centerHorizontal="true"
+                android:text="首页"
+                android:textColor="#30B6EC"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_storage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/storage"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/tv_storage"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/img_storage"
+                android:layout_centerHorizontal="true"
+                android:text="本地"
+                android:textColor="#414343"
+                android:textSize="13sp"
+                tools:ignore="DuplicateIds" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home" />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/img_home"
+                android:layout_centerHorizontal="true"
+                android:text="我的"
+                android:textColor="#414343"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

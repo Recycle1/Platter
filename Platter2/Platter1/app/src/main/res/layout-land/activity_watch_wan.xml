@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <com.example.platter1.Surface_View
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcontrol"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:background="#80000000">
+
+        <TextView
+            android:id="@+id/tv_jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_share"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="15dp"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="20sp" />-->
+
+        <Button
+            android:id="@+id/btn_behind"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/fanhui"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/img_qrcode"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:text="S"
+            android:background="@drawable/round1"
+            android:textSize="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lcontrol"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="11dp"
+        android:background="#80000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_position"
+                android:layout_toLeftOf="@+id/tv_duration">
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="100" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/kuaitui"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentLeft="true"/>
+
+
+            <Button
+                android:id="@+id/btn_pause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/bofang"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/btn_go"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/kuaijin"
+                android:layout_marginRight="100dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

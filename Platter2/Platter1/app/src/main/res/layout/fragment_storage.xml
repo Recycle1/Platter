@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F9">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地存储"
+            android:textColor="#252323"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+        <Switch
+            android:id="@+id/switch_net"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:trackTint="#B6B0B0"
+            android:thumbTint="#89AEF8"
+            android:showText="true"
+            android:textOff="WIFI"
+            android:textOn="流量"
+            android:scaleX="1.4"
+            android:scaleY="1.4"
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/btn_s"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/round1"
+                android:text="S"
+                android:textSize="100dp" />
+            <Button
+                android:id="@+id/btn_r"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/round2"
+                android:text="R"
+                android:textSize="100dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:layout_centerInParent="true">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_jindu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="正在加载.."
+            android:textSize="17sp"
+            android:gravity="center"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a' //select ABIs to build APKs for
+            universalApk true //generate an additional APK that contains all the ABIs
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.platter1"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86'
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storePassword '123456'
+            storeFile file('C:\\Users\\LENOVO\\Desktop\\Platter1\\key0.jks')
+
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    ndkVersion '22.1.7171670'
+}
+
+repositories {
+    //...
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation project(path: ':zxing-lib')
+    implementation project(path: ':vitamio')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.amikoj:ShadowView:1.0.1'
+
+    implementation 'io.github.youth5201314:banner:2.2.2'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+}

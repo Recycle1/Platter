@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/exit_activity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拼屏派对"
+            android:textColor="#252323"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="55dp"
+        android:layout_below="@id/rl_1">
+
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="双人模式"
+            android:textSize="19sp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="25dp"
+            android:layout_marginHorizontal="35dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_login"/>
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="多人模式"
+            android:textSize="19sp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="35dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

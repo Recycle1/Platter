@@ -1,0 +1,5 @@
+rootProject.name = "Platter1"
+include ':app'
+include ':zxing-lib'
+include ':vitamio'
+include ':library'

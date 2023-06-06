@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <com.example.platter1.Surface_View
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcontrol"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_behind"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/fanhui"
+            android:layout_alignParentLeft="true"/>/>
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="10dp"
+        android:max="100"
+        android:visibility="gone"/>
+</RelativeLayout>
