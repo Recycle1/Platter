@@ -1,4 +1,6 @@
 # Platter
+[Demo Video] https://pan.baidu.com/s/1uBEYR3-trWP9e1U5M2Ly2A?pwd=ij8a
+
 ## Brief introduction
 The idea of this project was originally put forward by my tutor Li Binbin, and I was responsible for the specific code. It can realize that multiple devices can play a video at the same time, and each device presents a part of the picture, finally realizing the effect of splicing small screens into large screens.
 ## Technical realization
