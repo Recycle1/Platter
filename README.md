@@ -12,4 +12,4 @@ The idea of this project was originally put forward by my tutor Li Binbin, and I
 - Increase the performance of the program and the number of devices connected.
 - Fix known bugs to make them support higher versions such as android12.
 
-Results display: [https://pan.baidu.com/s/1MSH56_F7UUOWmAla1FdEqw?pwd=1234#list/path=%2F](https://pan.baidu.com/s/1MSH56_F7UUOWmAla1FdEqw?pwd=1234#list/path=%2F)
+Project Documents: [https://pan.baidu.com/s/1MSH56_F7UUOWmAla1FdEqw?pwd=1234#list/path=%2F](https://pan.baidu.com/s/1MSH56_F7UUOWmAla1FdEqw?pwd=1234#list/path=%2F)
